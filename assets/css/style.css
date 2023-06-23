@@ -10,20 +10,26 @@
     --black-alpha: rgba(0,0,0,0.6);
     --white-color: #fff;
     --light-gray: #666666;
+    --red-color: rgb(229,9,20);
+    --red-color-hover: rgb(193, 17, 25);
+    --font-type:  Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;;
 }
 
 body {
     background: var(--background-primary);
     background-position: center auto;
-    background-size: cover;
+    background-size: auto;
     background-attachment: scroll;
+    background-origin: padding-box;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2.5rem 12rem;
+    padding: 3.5rem 12rem;
+    width: 100%;
+    height: 5rem;
 }
 
 select {
@@ -37,6 +43,16 @@ select {
     cursor: pointer;
 }
 
+h1 {
+    font-size: 3.8rem;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 1.6rem;
+}
+
 
 .logo-img {
     width: 11rem;
@@ -44,7 +60,9 @@ select {
 
 .navigation {
     display: flex;
-    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 0 2rem;
 }
 
 .material-symbols-outlined {
@@ -53,7 +71,8 @@ select {
 
 .languages-div {
     background: var(--black-alpha);
-    padding: .5rem 1rem;
+    padding: .3rem 1rem;
+    margin-right: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,4 +84,40 @@ select {
 
 .languages-div:hover {
     border: .1rem solid var(--white-color);
+}
+
+.bt-login {
+    padding: .48rem 1rem;
+    background: var(--red-color);
+    font-size: 1.2rem;
+    color: var(--white-color);
+    border: none;
+    border-radius: .4rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.bt-login:hover {
+    background: var(--red-color-hover);
+}
+
+.button-div,
+.complete-languages-div  {
+    display: inline-block;
+    justify-content: center;
+}
+
+.margin-form-div {
+    margin-top: 12.6rem;
+}
+
+.form-div {
+    margin: 0 auto;
+    color: var(--white-color);
+    font-family: var(--font-type);
+    font-weight: 900;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 74rem;
 }
