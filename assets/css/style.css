@@ -189,6 +189,12 @@ input {
     margin: 2rem 2rem 2rem 4rem;
 }
 
+.align-default-plain {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
 .default-plan {
     background-image: url(https://www.shutterstock.com/image-illustration/raster-abstract-dark-blue-pink-260nw-346904120.jpg);
     background-size: cover;
@@ -196,10 +202,10 @@ input {
     border-radius: .3rem;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 0 6rem;
+    margin-top: 8rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
-    width: 70rem;
+    width: 80%;
     display: flex;
     color: var(--white-color);
     font-size: 1.4rem;
@@ -210,7 +216,7 @@ input {
 .all-sections {
     position: relative;
     z-index: 0;
-    margin-top: 16rem;
+    margin-top: 4rem;
 }
 
 .first-section {
@@ -299,7 +305,7 @@ input {
     }
 
     .default-plan {
-        margin: 0 auto 0 2.5rem;
+        margin: 7rem auto 0 2.5rem;
         padding-top: .2rem;
         padding-bottom: .2rem;
         width: 45rem;
@@ -308,7 +314,7 @@ input {
     .all-sections {
         position: relative;
         z-index: 0;
-        margin-top: 11rem;
+        margin-top: 3rem;
     }
 
     .main-content-right,
@@ -421,10 +427,10 @@ input {
     }
 
     .default-plan {
-        margin: 0 auto 0 1rem;
+        margin: 0 auto;
         padding-top: .8rem;
         padding-bottom: .8rem;
-        width: 21.5rem;
+        width: 80%;
     }
 
     .bucket-popcorn-img {
@@ -450,7 +456,7 @@ input {
     .all-sections {
         position: relative;
         z-index: 0;
-        margin-top: 10rem;
+        margin-top: 0rem;
     }
 
     .main-content-right,
