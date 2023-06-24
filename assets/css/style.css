@@ -344,33 +344,52 @@ input {
     }
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 30rem) {
     header {
-        padding: 1rem 2rem;
+        padding: .3rem 1rem;
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        margin: 1rem;
     }
 
 
     p {
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     input {
-        width: 15.5rem;
+        width: 10.5rem;
         padding: .5rem;
         font-size: .8rem;
+    }
+
+    select {
+        font-size: .8rem;
+    }
+
+    span.material-symbols-outlined {
+        font-size: 1rem;
+    }
+
+    #languages-select {
+        margin-bottom: .3rem;
     }
 
     .languages-div  {
         margin-right: .3rem;
         padding: 0.1rem .3rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bt-login {
+        font-size: .8rem;
     }
 
     .logo-img {
-        width: 6rem;
+        width: 4rem;
     }
 
     .form-div {
@@ -383,12 +402,12 @@ input {
     }
 
     .bt-vamos-la {
-        font-size: 1rem;
+        font-size: .8rem;
     }
     
     .div-bt-vamosla {
         margin: 0 .4rem;
-        padding: .3rem 1.5rem;
+        padding: .5rem 1rem;
         font-size: 1.4rem;
     }
 
@@ -398,29 +417,34 @@ input {
     }
 
     .p-form-email {
-        font-size: 0.7rem
+        font-size: 0.5rem
     }
 
     .default-plan {
         margin: 0 auto 0 1rem;
         padding-top: .8rem;
         padding-bottom: .8rem;
-        width: 29rem;
+        width: 21.5rem;
     }
 
     .bucket-popcorn-img {
-        width: 4rem;
+        width: 3rem;
         margin: 1rem;
     }
 
     .p-default-plain {
         margin-top: 0;
         margin-bottom: .1rem;
+        font-size: .7rem;
     }
     
     .p-default-plain-content {
-        font-size: 1rem;
+        font-size: .6rem;
         margin: .4rem 0;
+    }
+
+    .bt-saiba-mais {
+        font-size: .95rem;
     }
 
     .all-sections {
