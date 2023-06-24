@@ -10,9 +10,11 @@
     --black-alpha: rgba(0,0,0,0.6);
     --white-color: #fff;
     --light-gray: #666666;
+    --white-alpha-font: rgba(255, 255, 255, 0.6);
     --red-color: rgb(229,9,20);
     --red-color-hover: rgb(193, 17, 25);
-    --font-type:  Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;;
+    --light-blue: rgb(68, 142, 244);
+    --font-type:  Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
 }
 
 body {
@@ -27,7 +29,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3.3rem 12.3rem;
+    padding: 3rem 10rem;
     width: 100%;
     height: 5rem;
 }
@@ -37,30 +39,48 @@ select {
     background: transparent;
     border: none;
     color: var(--white-color);
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0 .2rem 0 .4rem;
     margin-top: -.2rem;
     cursor: pointer;
 }
 
 h1 {
-    font-size: 3.8rem;
+    font-size: 3rem;
 }
 
 p {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 400;
-    margin-top: 1.6rem;
+    margin: 1.4rem auto;
+    font-family: var(--font-type);
+}
+
+input {
+    min-width: 10rem;
+    width: 25.5rem;
+    padding: 1rem;
+    border: .1rem solid var(--light-gray);
+    border-radius: .3rem;
+    background: var(--black-alpha);
+    font-size: 1.2rem;
+    color: var(--white-color);
+}
+
+.p-form-email {
+    font-size: 1.3rem
 }
 
 
 .logo-img {
-    width: 11.5rem;
+    width: 9.5rem;
 }
 
 .navigation {
     display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     padding: 0 2rem;
 }
@@ -71,7 +91,7 @@ p {
 
 .languages-div {
     background: var(--black-alpha);
-    padding: .3rem 1rem;
+    padding: .2rem 1rem;
     margin-right: 2rem;
     display: flex;
     justify-content: space-between;
@@ -87,7 +107,7 @@ p {
 }
 
 .bt-login {
-    padding: .50rem 1.1rem;
+    padding: .4rem 1.1rem;
     background: var(--red-color);
     font-size: 1.1rem;
     font-weight: 500;
@@ -99,18 +119,50 @@ p {
     cursor: pointer;
 }
 
-.bt-login:hover {
+.bt-login:hover,
+.div-bt-vamosla:hover {
     background: var(--red-color-hover);
 }
 
+.bt-vamos-la {
+    background: transparent;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: var(--white-color);
+    border: none;
+    border-radius: .3rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.div-bt-vamosla {
+    margin: 0 auto;
+    padding: .9rem 1.5rem;
+    background: var(--red-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: var(--white-color);
+    border: none;
+    border-radius: .3rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .button-div,
-.complete-languages-div  {
+.complete-languages-div {
     display: inline-block;
     justify-content: center;
+    align-items: center;
 }
 
 .margin-form-div {
-    margin-top: 15.8rem;
+    margin-top: 12rem;
+    margin-bottom: 10.6rem;
 }
 
 .form-div {
@@ -122,4 +174,95 @@ p {
     justify-content: center;
     align-items: center;
     width: 74rem;
+}
+
+.input-email  {
+    width: 37rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.bucket-popcorn-img {
+    width: 5rem;
+    margin: 2rem 2rem 2rem 4rem;
+}
+
+.default-plan {
+    background-image: url(https://www.shutterstock.com/image-illustration/raster-abstract-dark-blue-pink-260nw-346904120.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: .3rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0 5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    width: 70rem;
+    display: flex;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    z-index: 1;
+    position: absolute;
+}
+
+.all-sections {
+    position: relative;
+    z-index: 0;
+    margin-top: 15rem;
+}
+
+.first-section {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+}
+
+.p-default-plain {
+    margin-top: 0;
+    margin-bottom: .8rem;
+}
+
+.p-default-plain-content {
+    font-size: 1rem;
+    margin: .8rem 0 .8rem 0;
+}
+
+.div-bt-saibamais {
+    display: flex;
+    align-items: center;
+}
+
+.bt-saiba-mais {
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: .1rem solid var(--light-blue);
+    color: var(--light-blue);
+    font-size: 1rem;
+    margin-right: .3rem;
+}
+
+.color-icon {
+    color: var(--light-blue);
+}
+
+.main-content-right,
+.main-content-left {
+    width: 100%;
+    min-height: 85vh;
+    background: #000;
+    border-bottom: .5rem solid var(--light-gray);
+    color: var(--white-color);
+    font-family: var(--font-type);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content,
+.img-content {
+    width: 30rem;
+    margin: .5rem;
 }
